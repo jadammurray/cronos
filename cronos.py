@@ -16,7 +16,7 @@ for clinic in clinic_list:
     clinic_path = os.path.join(vasometrics_path, clinic)
     print("Clinic '{}':".format(clinic))
     for object in  clinic_object_list:
-        if object == "Processed Studies":
+        if object.lower() == "Processed Studies".lower():
             continue
 
         object_path = os.path.join(clinic_path,object)
